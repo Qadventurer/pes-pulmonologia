@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Bazy pytań z egzaminów specjalizacyjnych z chorób płuc, dostępne po wpisaniu hasła."><title>Bazy pytań: dostęp chroniony</title>
+<link rel="stylesheet" href="assets/bank.css"><link rel="stylesheet" href="assets/quiz.css">
+<link rel="stylesheet" href="assets/chrome.css"></head><body>
+<div class="nav"><a href="index.html">← Wszystkie zestawy</a></div>
+<div id="gate"><form class="box" id="f" autocomplete="off">
+<h1>Bazy pytań</h1><p>Treść jest zaszyfrowana. Podaj hasło, aby ją odczytać.</p>
+<input type="password" id="pw" placeholder="Hasło" autofocus aria-label="Hasło">
+<button id="go" type="submit">Odblokuj</button><div id="err" role="alert"></div>
+</form></div>
+<div id="app">
+<aside><input type="search" id="q" placeholder="Szukaj we wszystkich…" aria-label="Szukaj"><div id="hits"></div><div id="list"></div><div class="lock"><button id="lock" type="button">Zablokuj</button></div></aside>
+<article id="doc"></article>
+</div>
+<script src="data/bank.enc.js"></script>
+<script src="assets/bank.js"></script>
+<script src="assets/chrome.js"></script></body></html>

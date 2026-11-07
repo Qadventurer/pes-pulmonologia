@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="50 gazometrii do interpretacji z kluczem odpowiedzi."><title>Gazometrie do interpretacji: 50 przypadków</title>
+<link rel="stylesheet" href="assets/gaz.css"><link rel="stylesheet" href="assets/quiz.css">
+<link rel="stylesheet" href="assets/chrome.css"></head><body>
+<div class="wrap">
+<div class="nav"><a href="index.html">← Wszystkie zestawy</a></div>
+<header>
+  <h1>Gazometrie do interpretacji</h1>
+  <p>50 przypadków na poziomie ustnego PES z chorób płuc. Przeanalizuj gazometrię, sformułuj odpowiedź, potem rozwiń wzorcową interpretację.</p>
+</header>
+<div class="toolbar"><span class="meta">50 przypadków</span><button class="tool" id="collapse">Ukryj wszystkie odpowiedzi</button><button class="tool" id="resetNotes">Wyczyść moje odpowiedzi</button></div>
+<details class="cheat">
+<summary>Ściąga: algorytm i reguły kompensacji</summary>
+<div class="in">
+  <div><h2>Wartości referencyjne (tętnicza)</h2><ul>
+    <li><code>pH</code> 7,35–7,45</li><li><code>PaCO₂</code> 35–45 mmHg</li><li><code>PaO₂</code> 80–100 mmHg (na powietrzu)</li><li><code>HCO₃⁻</code> 22–26 mmol/l, <code>BE</code> −2…+2</li><li><code>AG</code> = Na − Cl − HCO₃ ≈ 8–12 (korekta: +2,5 na każde 1 g/dl albuminy poniżej 4)</li></ul></div>
+  <div><h2>Algorytm</h2><ul>
+    <li>1. Kwasica czy zasadowica (pH)?</li><li>2. Składnik oddechowy (pCO₂) czy metaboliczny (HCO₃⁻)?</li><li>3. Czy kompensacja adekwatna?</li><li>4. Luka anionowa, ΔAG/ΔHCO₃⁻</li><li>5. Oksygenacja: PaO₂, P/F, gradient A–a</li><li>6. Zespół kliniczny i postępowanie</li></ul></div>
+  <div><h2>Kompensacja</h2><ul>
+    <li>Wg tabeli podręcznikowej: <b>niewyrównana</b> = pH zmienione, składnik kompensujący w normie (HCO₃⁻ w zab. oddechowych, pCO₂ w metabolicznych); <b>częściowo</b> = składnik kompensujący zmieniony, pH poza normą; <b>całkowicie</b> = pH w normie</li><li>Kwasica oddechowa ostra: HCO₃⁻ +1 na każde +10 pCO₂</li><li>Kwasica oddechowa przewlekła: +3,5 na +10</li><li>Alkaloza oddechowa ostra: HCO₃⁻ −2 na −10 pCO₂</li><li>Alkaloza oddechowa przewlekła: −4 do −5 na −10</li><li>Kwasica metaboliczna (Winter): pCO₂ = 1,5 × HCO₃⁻ + 8 ± 2</li><li>Alkaloza metaboliczna: pCO₂ = 40 + 0,7 × (HCO₃⁻ − 24)</li></ul></div>
+  <div><h2>Oksygenacja i ΔΔ</h2><ul>
+    <li>PAO₂ = FiO₂ × (Pb − 47) − PaCO₂/0,8; na poziomie morza FiO₂ 0,21: 150 − PaCO₂/0,8</li><li>A–a norma ≈ wiek/4 + 4</li><li>P/F: 200–300 łagodny, 100–200 umiarkowany, &lt;100 ciężki ARDS</li><li>ΔAG/ΔHCO₃⁻: &lt;0,4 NAGMA, 1–2 czysta HAGMA, &gt;2 + alkaloza metaboliczna</li></ul></div>
+</div>
+</details>
+<main class="list" id="list"></main>
+</div>
+<script src="data/gaz.js"></script>
+<script src="assets/gaz.js"></script>
+<script src="assets/chrome.js"></script></body></html>

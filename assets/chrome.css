@@ -1,0 +1,15 @@
+/* Hallmark · shape: Register · genre: modern-minimal · theme: Blueprint (by request) · redesign: full · copy: verbatim
+ * hero: kept per page · nav: masthead with a keyline · footer: colophon · imagery: none, the page's own loop drawing · signature: the masthead keyline · blueprint: cyanotype
+ * axes: mid/geometric-sans/neutral · posture: drenched · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V3 · weakest: S, a masthead is generic; the keyline and wordmark carry it */
+@import url("./tokens.css");
+.mast { background: var(--color-paper); border-bottom: var(--rule-heavy) solid var(--color-rule); position: relative; z-index: var(--z-sticky); }
+.mast .in { max-width: var(--container); margin-inline: auto; padding: var(--space-sm) var(--gutter); display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-xs) var(--space-lg); }
+.mast .brand { margin-right: auto; font: 600 1.25rem/1 var(--font-display); text-transform: uppercase; letter-spacing: var(--tracking-display); color: var(--color-ink); text-decoration: none; }
+.mast a { font: 500 var(--text-sm) var(--font-body); color: var(--color-ink); text-decoration: underline; text-decoration-color: transparent; text-underline-offset: .3em; padding-block: var(--space-xs); transition: text-decoration-color var(--dur-short) var(--ease-out); }
+.mast a:hover { text-decoration-color: var(--color-rule); }
+.mast a:active { color: var(--color-muted); }
+.mast a[aria-current=page] { text-decoration-color: var(--color-ink); text-decoration-thickness: 2px; }
+.mast .brand:hover { text-decoration: none; }
+.mast a:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+@media (max-width: 40rem) { .mast .brand { width: 100%; } }

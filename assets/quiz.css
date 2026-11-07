@@ -1,0 +1,25 @@
+/* Hallmark · shape: Register · genre: modern-minimal · theme: Blueprint (by request) · redesign: full · copy: verbatim
+ * hero: none, app screen · nav: masthead with a keyline · footer: none · imagery: none, the page's own charts and tables · signature: keylined working column under a heavy rule
+ * axes: mid/geometric-sans/neutral · posture: drenched · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P3 H4 E3 S3 R4 V3 · weakest: E, the quiz logic keeps its old markup so only the system changed; the layout stays as built */
+@import url("./tokens.css");
+body { font-family: var(--font-body); }
+h1, h2, h3 { font-family: var(--font-display); font-weight: var(--display-weight); color: var(--color-ink); }
+h1, h2 { text-transform: uppercase; }
+h1 { font-size: clamp(2rem, 4.4vw, 3.4rem); line-height: 1.02; max-width: 20ch; }
+h2 { font-size: var(--text-title); line-height: 1.1; }
+button, summary, th, label, .btn, .tag, .chip, input, textarea, select, nav, small, .meta { font-family: var(--font-body); font-weight: 500; }
+textarea, input { font-family: var(--font-body); font-weight: 400; }
+button { border-radius: 0; }
+.wrap { border-top: var(--rule-heavy) solid var(--color-rule); padding-top: var(--space-lg); }
+.card { color: var(--color-ink); background: var(--color-paper-2); border: var(--rule-hair) solid var(--color-rule); }
+table { font-variant-numeric: lining-nums tabular-nums; }
+a { text-decoration-color: var(--color-rule-2); text-underline-offset: .18em; } a:hover { text-decoration-color: var(--color-accent); }
+html, body { overflow-x: clip; }
+html { scrollbar-color: var(--color-muted) var(--color-paper); }
+body { caret-color: var(--color-accent); }
+::selection { background: color-mix(in oklab, var(--color-accent) 22%, transparent); }
+:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+button:disabled { background: var(--color-paper-3); color: var(--color-muted); border-color: var(--color-rule-2); cursor: not-allowed; }
+button:active { background: var(--color-paper-3); }
+body { margin: 0; }

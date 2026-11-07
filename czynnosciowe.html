@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Badania czynnościowe płuc do samodzielnej interpretacji: 50 przypadków ze spirometrią, pletyzmografią i dyfuzją."><title>Badania czynnościowe płuc: 50 przypadków</title>
+<link rel="stylesheet" href="assets/pft.css"><link rel="stylesheet" href="assets/quiz.css">
+<link rel="stylesheet" href="assets/chrome.css"></head><body>
+<div class="wrap">
+  <div class="nav"><a href="index.html">← Wszystkie zestawy</a></div>
+  <div class="top">
+    <div><div class="meta" id="cnt"></div><h1>Badania czynnościowe płuc</h1></div>
+    <div class="row"><button id="prev">Poprzedni</button><select id="jump" aria-label="Przejdź do przypadku"></select><button id="next">Następny</button></div>
+  </div>
+
+  <section class="card"><h2>Kontekst kliniczny</h2><div class="pt" id="pt"></div><p class="ctx" id="ctx"></p><ul class="ex" id="ex"></ul></section>
+
+  <section class="card"><h2>Spirometria z próbą rozkurczową</h2>
+    <div class="tw"><table id="tSpir"></table></div><div class="bd" id="bd"></div></section>
+
+  <section class="charts">
+    <div class="card"><h2>Krzywa przepływ i objętość</h2><div id="fv"></div></div>
+    <div class="card"><h2>Krzywa objętość i czas</h2><div id="vt"></div></div>
+  </section>
+  <div class="leg" style="margin-top:-8px"><span><i style="border-color:var(--pre)"></i>przed BD</span><span><i style="border-color:var(--post);border-top-style:dashed"></i>po BD</span><span><i style="border-color:var(--pred);border-top-style:dotted"></i>należna</span></div>
+
+  <section class="card"><h2>Pletyzmografia</h2><div class="tw"><table id="tPl"></table></div></section>
+  <section class="card"><h2>Dyfuzja (single-breath)</h2><div class="tw"><table id="tDl"></table></div></section>
+
+  <div class="duo">
+  <section class="card"><h2>Twoja interpretacja</h2>
+    <div class="qs">
+      <div><label for="a1">1. Typ i stopień zaburzeń wentylacji</label><textarea id="a1"></textarea></div>
+      <div><label for="a2">2. Próba rozkurczowa, hiperinflacja, dyfuzja</label><textarea id="a2"></textarea></div>
+      <div><label for="a3">3. Rozpoznanie i diagnostyka różnicowa</label><textarea id="a3"></textarea></div>
+      <div><label for="a4">4. Dalsze postępowanie</label><textarea id="a4"></textarea></div>
+    </div>
+    <div class="row" style="margin-top:14px"><button class="primary" id="reveal" aria-expanded="false">Pokaż klucz odpowiedzi</button><button id="clear">Wyczyść moje odpowiedzi</button><span class="saved" id="saved"></span></div>
+  </section>
+  <section class="card" id="keyCard" hidden><h2>Klucz odpowiedzi</h2><div class="key" id="key"></div></section>
+  </div>
+
+  <p class="foot">Wartości należne i Z-score liczone z równań dydaktycznych (typu ECCS), spójnych wewnętrznie. Dolna granica normy (DGN) = z −1,645. Krzywe są modelowane na podstawie wartości z tabeli. Materiał edukacyjny.</p>
+</div>
+<script src="data/pft.js"></script>
+<script src="assets/pft.js"></script>
+<script src="assets/chrome.js"></script></body></html>
