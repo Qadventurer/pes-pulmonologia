@@ -89,3 +89,14 @@ body { caret-color: var(--color-accent); }
 button:disabled { background: var(--color-paper-3); color: var(--color-muted); border-color: var(--color-rule-2); cursor: not-allowed; }
 button:active { background: var(--color-paper-3); }
 h1, h2, h3, h4 { text-wrap: balance; }
+
+#gate { max-width: 420px; margin: var(--space-3xl) auto; padding-inline: var(--space-md); }
+#gate .box { border: var(--rule-hair) solid var(--color-rule); background: var(--color-paper-2); padding: var(--space-lg); }
+#gate h1 { font-size: var(--text-2xl); line-height: 1.05; margin: 0 0 var(--space-xs); }
+#gate p { margin: 0 0 var(--space-md); color: var(--color-muted); font-size: var(--text-sm); }
+#gate label { display: block; font-size: var(--text-sm); margin-bottom: var(--space-2xs); }
+#gate input { width: 100%; min-height: 48px; padding: 0 var(--space-sm); border: var(--rule-hair) solid var(--color-rule); border-radius: 0; background: var(--color-paper); color: var(--color-ink); font: 400 var(--text-md) var(--font-body); }
+#gate input:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+#gate .btn { margin-top: var(--space-md); }
+#gate .btn:disabled { background: var(--color-paper-3); color: var(--color-muted); border-color: var(--color-rule-2); cursor: wait; }
+#gate #err { min-height: 1.4em; margin: var(--space-sm) 0 0; color: var(--color-error); }
